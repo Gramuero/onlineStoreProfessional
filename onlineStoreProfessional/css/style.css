@@ -1,0 +1,431 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+a {color: #f58b8b;}
+
+a:hover {
+    color: #5655ea;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:active {color: #8ce4a6;}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+hr {
+    display: block;
+    border: 1;
+    height: 1px;
+    border-top: 1 px solid #ccc;
+    padding: 0;
+}
+
+.left {float: left}
+.right {float: right}
+.clear {clear: both}
+
+::selection {background: #f58b8b; color:#fff;}
+::-moz-selection {background: #f58b8b; color:#fff;}
+
+header, footer {
+    width: 98%;
+    background-color: #fff;
+    float:left;
+}
+
+header {
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+
+#logo {
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+    color: silver;
+}
+
+.contact {
+    font-size: 1.5em;
+    font-family: Comic Sans MS, sans-serif;
+    margin-left: 20px;
+}
+
+input[type=text].field {
+    border-radius: 7px;
+    border: 2px solid silver;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input[type=text].field:focus {
+    border: 2px solid #f58b8b;
+}
+
+#menu {
+    color: #666;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 1.7em;
+}
+
+#menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#menuHrefs a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px; 
+    color: #818181;
+}
+
+#menuHrefs a:hover {
+    background-color: #ececec;
+}
+
+/*Основные стили для сайта*/
+
+article {
+    margin-bottom: 10px;
+}
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#wrapper #popular {
+    margin-top: 5px;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#leftArticle {
+    margin-left: 200px; 
+}
+
+#wrapper h2 {
+    color: #666;
+    font-family: Comic Sans MS, sans-serif;
+}
+
+#wrapper h3 {
+    width: 90%;
+    margin-left: 5%;
+    color: #4a4a4a;
+}
+
+#wrapper p {
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+
+#wrapper a {
+    padding: 5px;
+    background-color: #ed7b7b;
+    margin-left: 5%;
+    border-radius: 5px;
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#wrapper #popular article {
+    float: left;
+    width: 23%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-height: 435px;
+}
+
+#wrapper #popular article img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#wrapper #productCategory {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wrapper #productCategory article {
+    float: left;
+    width: 31.333%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-height: 400px;
+}
+
+#wrapper #productCategory article img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#wrapper a:hover {background-color: #7feb6d;}
+
+/* Стили для странички о нас */
+
+#about_us { 
+    width: 100%;
+    float: left;
+    background-color: #fafafa
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#ColumRight { 
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* Стили для формы */
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: lest;
+}
+
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    border-radius: 7px;
+    border: 2px solid silver;
+    padding: 5px;
+    float: left;
+    clear:both;
+    margin-bottom: 10px;
+    background-color:#fafafa;
+    width: 40%;
+}
+
+form input: focus, form textarea: focus {border: 2px solid #f58b8b}
+
+form textarea{
+    width: 60%;
+    float: left;
+    clear: both;
+    background-color:#fafafa;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    font-size:1.7em;
+}
+
+form #send {
+    float: left;
+    padding: 10px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:5px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;    
+}
+
+form #send: hover {
+    background-color: bdf37a;
+}
+
+/* Регистрация / Вход */
+
+form #reg {
+    width:40%;
+    float: left;
+    padding: 15px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:10px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;    
+}
+
+#SignUp #popular article {
+    width: 25%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-height: 200px;
+}
+
+#TitleReg {
+    margin-bottom: 20px;
+}
+
+#page-wrap img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+#page-wrap .RegistrTitle{
+    margin-right: 50px;
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+    color: silver;
+}
+
+#ButtonReg {
+    border: none;
+    margin-bottom: 20px;
+    margin-left: -37%;
+    width: 83%;
+    height: 30px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:5px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;
+}
+
+#ButtonReg:hover {
+    background-color: #7feb6d;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+#username{
+    margin-top: -40px;
+}
+
+.logName{
+    padding: 5px;
+    width: 50%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-height: 30px;
+}
+
+input.logName:focus {
+    border: 1px solid #f58b8b;
+}
+
+#TitleReg {
+    margin-top: 2%;
+}
+
+/*Центральный блок нашего сайта*/
+
+#main_soc_block {
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid silver; 
+    border-top: 2px solid silver; 
+    margin: 20px 0;
+    float: left;
+    background: url('../img/bnr-background.jpg') repeat-x center 0;
+    height: 300px;
+}
+
+#main_soc_block_in {
+    text-align: center;
+    padding: 1%;
+    height: 100px;
+    background-color: #fafafa;
+    border: 1px solid silver;
+    border-radius: 7px;
+    width: 500px;
+}
+
+#main_soc_block_in a {
+    float: left;
+    padding: 5px 10px;
+    background-color: #e9af32;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 35%;
+    margin-top: 15px;
+}
+
+/*Cтили для футера*/
+
+footer {
+    padding: 1%;
+    border-top: 2px solid silver;
+    margin-top: 10px; 
+    padding-bottom: 2%;
+}
+
+footer img {width: 5%; float: left; margin-right: 5px}
+
+#page-wrap:after {
+    content: "";
+    display: block;
+}
+
+footer, #page-wrap:after {height: 10px}
+
+#page-wrap {
+    min-height: 92%;
+    margin-bottom: -10px;
+}
